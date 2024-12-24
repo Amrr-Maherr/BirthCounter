@@ -1,0 +1,95 @@
+/* BirthCounterStyle.css */
+
+/* إضافة تأثير عند تحميل الصفحة */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.counter-container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 1s ease-out;
+    /* الأنيميشن عند تحميل المكون */
+}
+
+.counter-container h1 {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.counter-container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.counter-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-out;
+    /* تأثير الأنيميشن عند عرض العمر */
+}
+
+.counter-container button {
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: fadeIn 2s ease-out;
+    /* الأنيميشن عند ظهور الأزرار */
+}
+
+.counter-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.counter-container button:active {
+    background-color: #003f7f;
+    transform: translateY(1px);
+}
+
+/* إضافة حركة عند التفاعل مع الأزرار */
+.counter-container button:focus {
+    outline: none;
+    animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
