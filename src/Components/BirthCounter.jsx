@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Add, Delete } from "../Redux/ActionTypes/Actions";
+import { AddYearAction, DeleteYearAction } from "../Redux/ActionTypes/Actions";
 import "../Style/BirthCounterStyle.css"; // استيراد ملف الـ CSS
 
 function BirthCounter() {
@@ -7,11 +7,11 @@ function BirthCounter() {
   const Dispatch = useDispatch();
 
   const AddYear = () => {
-    Dispatch({ type: Add });
+    Dispatch(AddYearAction());
   };
 
   const DeleteYear = () => {
-    Dispatch({ type: Delete });
+    Dispatch(DeleteYearAction());
   };
 
   return (
