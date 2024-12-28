@@ -1,6 +1,6 @@
 /* BirthCounterStyle.css */
 
-/* إضافة تأثير عند تحميل الصفحة */
+/* Animation for fading in the page on load */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -13,6 +13,7 @@
     }
 }
 
+/* Styling for the main container */
 .counter-container {
     text-align: center;
     margin-top: 50px;
@@ -23,10 +24,10 @@
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    animation: fadeIn 1s ease-out;
-    /* الأنيميشن عند تحميل المكون */
+    animation: fadeIn 1s ease-out; /* Animation when the component loads */
 }
 
+/* Header styling inside the container */
 .counter-container h1 {
     font-size: 3rem;
     color: #007bff;
@@ -35,20 +36,22 @@
     letter-spacing: 2px;
 }
 
+/* Paragraph text styling */
 .counter-container p {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 30px;
 }
 
+/* Sub-header styling for age display */
 .counter-container h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 30px;
-    animation: fadeIn 1.5s ease-out;
-    /* تأثير الأنيميشن عند عرض العمر */
+    animation: fadeIn 1.5s ease-out; /* Animation effect for age display */
 }
 
+/* Button styling */
 .counter-container button {
     margin: 10px;
     padding: 12px 25px;
@@ -60,26 +63,28 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    animation: fadeIn 2s ease-out;
-    /* الأنيميشن عند ظهور الأزرار */
+    animation: fadeIn 2s ease-out; /* Animation for buttons on load */
 }
 
+/* Hover effect for buttons */
 .counter-container button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
 }
 
+/* Active state styling for buttons */
 .counter-container button:active {
     background-color: #003f7f;
     transform: translateY(1px);
 }
 
-/* إضافة حركة عند التفاعل مع الأزرار */
+/* Adding focus animation to buttons */
 .counter-container button:focus {
     outline: none;
     animation: pulse 0.5s infinite;
 }
 
+/* Pulse animation for button interaction */
 @keyframes pulse {
     0% {
         transform: scale(1);
